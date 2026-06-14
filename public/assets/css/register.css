@@ -1,0 +1,149 @@
+/* Background Gradient */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* background: linear-gradient(135deg, #fc466b, #3f5efb); */
+    background: linear-gradient(to right, rgb(61, 5, 5), rgb(126, 7, 7), rgb(110, 11, 11), rgb(126, 7, 7),rgb(126, 7, 7));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #fff;
+  }
+  
+  /* Register Container */
+  .register-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px 55px;
+    border-radius: 15px;
+    width: 100%;
+    height: 500px;
+    max-width: 600px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  }
+  
+  .register-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  
+  .register-container label {
+    font-weight: 500;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .register-container input[type="text"],
+  .register-container input[type="email"],
+  .register-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  /* Checkbox */
+  .checkbox a {
+    text-decoration: none;
+    color: #fff; 
+  }
+
+  .checkbox{
+    padding-top: 1rem;
+  }
+  
+ 
+  /* Buttons */
+  .action_btns {
+    padding-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .abtn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    /* background: #fff; */
+    background-color: black;
+    /* color: #3f5efb; */
+     color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .abtn:hover {
+    /* background: #ffd700;
+    color: #000; */
+     background-color: #ff6600;
+    border-color: #ff6600;
+  }
+
+  /* ============================= */
+/* 📱 MOBILE RESPONSIVE REGISTER PAGE */
+/* ============================= */
+@media (max-width: 768px) {
+
+  body {
+    padding: 20px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  /* Register Box */
+  .register-container {
+    width: 100%;
+    /* max-width: 100%; */
+    height: auto;
+    padding: 30px 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+  }
+
+  /* Heading */
+  .register-container h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  /* Labels */
+  .register-container label {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  /* Inputs */
+  .register-container input[type="text"],
+  .register-container input[type="email"],
+  .register-container input[type="password"] {
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    width: 90%;
+  }
+
+  /* Buttons */
+  .action_btns {
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 20px;
+    width: 50%;
+  }
+
+  .abtn {
+    width: 80%;
+    padding: 12px;
+    font-size: 15px;
+  }
+
+}
+  

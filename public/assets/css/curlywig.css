@@ -1,0 +1,570 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999; /* keeps it above everything */
+      /* background-color: rgb(243, 233, 233) */
+       background-color: white;
+}
+
+/* Brand styling */
+.navbar-brand {
+    font-family: 'Arial', sans-serif;   /* Change font style */
+    font-size: 50px;                     /* Change font size */
+    font-weight: 700;                     /* Bold font */
+    letter-spacing: 1px;                  /* Optional spacing between letters */
+     color: rgb(126, 7, 7);                       /* Brand color */
+}
+.navbar-brand {
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+/* Hover effect */
+.navbar .d-flex.align-items-center.gap-3 a:hover {
+    transform: scale(1.2);
+}
+
+/* Icons container (right side) */
+.navbar .d-flex.align-items-center.gap-3 a {
+    font-size: 25px;                     /* Icon size */
+    margin-left: 15px;                    /* Space between icons */
+    font-weight: 1000;
+}
+
+/* Cart badge adjustment (optional) */
+.navbar .position-relative .badge {
+    font-size: 12px;                       /* Size of badge number */
+    padding: 2px 6px;                      /* Space inside badge */
+}
+
+/* Navbar links styling */
+.navbar-nav .nav-link {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;                    
+    font-weight: bolder;              
+    color: rgb(126, 7, 7);                       
+    margin: 0 70px;              
+    transition: color 0.3s ease;        
+    color: rgb(126, 7, 7);
+}
+
+/* Active link home button */
+.navbar-nav .nav-link.active {
+   font-weight: 1000;
+    color: rgb(126, 7, 7);
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+    color: #ff6600;                     /* Change color on hover */
+    text-decoration: none;              /* Remove underline */
+}
+
+/* Dropdown links styling */
+.navbar-nav .dropdown-menu .dropdown-item {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 20px;                  /* Adjust spacing inside dropdown */
+    color: #e60023;
+}
+ 
+.navbar-nav .dropdown-menu .dropdown-item:hover{
+    background-color:  #ff6600;
+}
+
+
+/* Card styling */
+
+/* GRID FIX */
+.product-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* CARD */
+.product-card {
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* HOVER */
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+/* IMAGE */
+.product-card img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* TEXT BELOW CARD */
+.card-info h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-info p {
+    font-size: 14px;
+}
+
+/* PRICE */
+.price {
+    margin: 10px 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.new-price {
+    color: #e60023;
+    font-weight: bold;
+}
+
+/* BUTTON */
+.card-info .btn {
+    border-radius: 25px;
+    background-color: #960d0d;
+    transition: 0.3s;
+}
+
+.card-info .btn:hover {
+    background-color: #ff6600;
+    border-color: #ff6600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-lg-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* footer section */
+
+/* Footer background */
+.main-footer {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, #000000, #000000, #1b0202, #000000,#000000);
+    color:  rgb(243, 233, 233);
+    padding: 60px 0;
+    height: 47rem;
+}
+
+/* Top section */
+.footer-top {
+    max-width: 600px;
+    margin: auto;
+}
+
+.footer-brand {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-top: 3rem;
+    
+}
+
+.footer-text {
+    font-size: 14px;
+    color:  rgb(243, 233, 233);
+    margin-top: 10px;
+    height: 10rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Headings */
+.footer-heading {
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+/* Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    /* color: #ccc; */
+    color:  rgb(243, 233, 233);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff6600;
+}
+
+/* Social icons */
+.footer-socials a {
+    font-size: 20px;
+    color:  rgb(243, 233, 233);
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.footer-socials a:hover {
+    color: #ff6600;
+}
+
+.kill {
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* logo */
+
+
+.navbar-brand {
+    position: relative;
+    height: 80px;
+}
+
+.logo-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 160px;
+    width: auto;
+}
+/* Keep text styling */
+.navbar-brand span {
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(126, 7, 7);
+}
+
+.pink {
+    color: #960d0d;
+    font-weight: 700;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Toggle Switch */
+/* DARK MODE */
+
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .navbar {
+    background-color: #1e1e1e !important;
+}
+
+.dark-mode .navbar a,
+.dark-mode .navbar .bi {
+    color: #ddd !important;
+}
+
+.dark-mode .navbar-nav .nav-link {
+    color: #960d0d !important;
+}
+
+.dark-mode .navbar-nav .nav-link:hover {
+    color: #ff6600 !important;
+}
+
+.dark-mode .top-sellers,
+.dark-mode .wig-showcase {
+    background-color: #121212;
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.dark-mode .leader,
+.dark-mode .love {
+    background: #1e1e1e !important;
+}
+
+.dark-mode .main-footer {
+    background: #000 !important;
+}
+
+.dark-mode .dropdown-menu {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .dropdown-item {
+    color: #ddd;
+}
+
+.dark-mode .dropdown-item:hover {
+    /* color: #ddd; */
+    background-color: #ff6600;
+}
+
+.dark-mode .search-form {
+    background: white !important;
+}
+
+.dark-mode .search-form input {
+    color: black !important;
+}
+
+.dark-mode .search-form i {
+    color: rgb(126, 7, 7) !important;
+}
+
+
+/* Toggle Switch */
+.theme-toggle {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+}
+
+#darkModeToggle {
+    display: none;
+}
+
+.toggle-label {
+
+    width: 60px;
+    height: 30px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle-label .ball {
+    width: 22px;
+    height: 22px;
+    background: white;
+    position: absolute;
+    left: 4px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+#darkModeToggle:checked + .toggle-label .ball {
+    transform: translateX(30px);
+}
+
+.toggle-label .sun {
+    color: orange;
+}
+
+.toggle-label .moon {
+    color: gold;
+}
+
+/* Dark mode navbar */
+.dark-mode .navbar {
+    background: #1e1e1e !important;
+}
+
+/* Optional: make text softer in dark mode */
+.dark-mode .navbar .navbar-brand,
+.dark-mode .navbar .navbar-text {
+    color: #ffffff !important;
+}
+
+/* Optional: logout button */
+.dark-mode .navbar .btn {
+    border-color: #ccc;
+    color: #ccc;
+}
+
+/* Wrapper */
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* FORM (hidden initially) */
+.search-form {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 30px;
+    padding: 5px 10px;
+
+    width: 0;
+    overflow: hidden;
+
+    margin-left: 10px;
+
+    transition: width 0.4s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+/* ACTIVE STATE (EXPAND RIGHT) */
+.search-form.active {
+    width: 200px;   /* control size here */
+    opacity: 1;
+}
+
+/* INPUT */
+.search-form input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    padding: 5px;
+}
+
+/* BUTTON */
+.search-form button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #960d0d;
+}
+
+.dark-mode .search-form {
+    background: #1e1e1e;
+}
+
+.dark-mode .search-form input {
+    color: #fff;
+}
+
+.dark-mode .search-form button {
+    color: #ff6600;
+}
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 5px 0;
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+    /* PRODUCT GRID */
+    /* .product-card {
+        max-width: 100%;
+        height: 25rem;
+    } */
+/* 
+    .product-card img {
+        height: 220px;
+        height: 25rem;
+    } */
+
+
+    /* FOOTER */
+    .main-footer {
+        height: auto;
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .footer-text,
+    .main-footer .footer-links {
+        height: auto;
+        font-size: 13px;
+    }
+
+    .main-footer .footer-socials {
+        margin-top: 15px;
+    }
+
+    /* SEARCH */
+    .search-form.active {
+        width: 150px;
+    }
+
+    .kill {
+        padding-bottom: 1rem;
+    }
+
+    .theme-toggle {
+    padding-top: 2rem;
+   }
+
+    .card-info .btn {
+     width: 50% !important;
+    }
+
+       /* Navbar toggler (hamburger icon) */
+.navbar-toggler {
+    border-color: #960d0d;
+}
+
+/* Change the icon color to your red */
+.navbar-toggler-icon {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(95%) saturate(4000%) hue-rotate(350deg) contrast(100%);
+}
+}
+
+/* ============================= */
+/* WhatsApp Floating Button */
+/* ============================= */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 9999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+/* 📱 MOBILE ONLY */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 70px;
+        right: 15px;
+    }
+}

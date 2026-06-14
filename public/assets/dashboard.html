@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+
+    <!-- LOGO -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="" alt="Logo" width="40" height="40" style="object-fit: cover;">
+        <!-- <span class="fw-bold text-white">FAMZYKINGS</span> -->
+    </a>
+
+    <!-- RIGHT SIDE -->
+    <div class="d-flex align-items-center">
+        <span class="navbar-text me-3">Logged in as John Doe</span>
+        <button class="btn btn-outline-light" onclick="logout()">Logout</button>
+    </div>
+
+</div>
+</nav>
+
+<div class="d-flex main-wrapper">
+
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <h5 class="text-white p-3">Dashboard</h5>
+        <ul class="nav flex-column">
+
+            <li class="nav-item">
+                <a class="nav-link active" href="#" onclick="handleClick(event, 'home')">
+                    <i class="fas fa-home"></i> Home
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="handleClick(event, 'profile')">
+                    <i class="fas fa-user"></i> Profile
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="handleClick(event, 'settings')">
+                    <i class="fas fa-cogs"></i> Settings
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="handleClick(event, 'reports')">
+                    <i class="fas fa-chart-bar"></i> Reports
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <div id="content-container">
+            <h1>Welcome</h1>
+            <p>Select an option from the sidebar.</p>
+        </div>
+
+        <!-- Dark Mode Toggle -->
+        <div class="theme-toggle">
+            <input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()">
+            <label for="darkModeToggle" class="toggle-label">
+                <i class="fas fa-sun icon sun"></i>
+                <i class="fas fa-moon icon moon"></i>
+                <span class="ball"></span>
+            </label>
+        </div>
+    </main>
+
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+    <p>&copy; 2024 FAMZYKINGS. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

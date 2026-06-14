@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wig Store Navbar</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="css/privacypolicy.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light  shadow-sm flex-column">
+
+        <!-- 🔥 TOP ROW -->
+        <div class="container d-flex align-items-center justify-content-between py-3">
+
+            <!-- Empty div (left space for perfect centering) -->
+            <div style="width: 120px;"></div>
+
+            <!-- Brand (centered) -->
+            <!-- <a class="navbar-brand fw-bold fs-3 m-0 text-center" href="index.html">KINGS HAIR</a> -->
+            <a class="navbar-brand d-flex align-items-center justify-content-center gap-2 m-0" href="index.html">
+                <img src="img/Kings Hair salon logo design.png" alt="Logo" class="logo-img">
+                <!-- <span>KINGS HAIR</span> -->
+            </a>
+
+            <!-- Icons (right side) -->
+            <div class="d-flex align-items-center gap-3" style="width: 120px; justify-content: flex-end;">
+
+                <!-- login icon -->
+                <a href="register.html" class="text-dark">
+                    <i class="ri-user-fill fs-5"></i>
+                </a>
+
+                <!-- search icon -->
+                <a href="#" class="text-dark">
+                    <i class="bi bi-search fs-5"></i>
+                </a>
+                <!-- cart icon -->
+                <a href="#" class="text-dark position-relative">
+                    <i class="bi bi-cart fs-5"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        #
+                    </span>
+                </a>
+                <!-- Dark Mode Toggle -->
+                <div class="theme-toggle">
+                    <input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()">
+                    <label for="darkModeToggle" class="toggle-label">
+                        <i class="fas fa-sun icon sun"></i>
+                        <i class="fas fa-moon icon moon"></i>
+                        <span class="ball"></span>
+                    </label>
+                </div>
+                </main>
+
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <!-- <hr class="w-100 m-0"> -->
+
+        <!-- 🔥 TOGGLER -->
+        <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 🔥 MENU -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">HOME</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                        ALL WIGS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="glueless-wigs.html">Glueless Wigs</a></li>
+                        <li><a class="dropdown-item" href="bob-wigs.html">Bob Wigs</a></li>
+                        <li><a class="dropdown-item" href="bone-straight-wigs.html">Bone Straight Wigs</a></li>
+                        <li><a class="dropdown-item" href="raw-wavy-wigs.html">Raw Wavy Wig</a></li>
+                        <li><a class="dropdown-item" href="curly-wigs.html">Original Curly Wig</a></li>
+                        <li><a class="dropdown-item" href="fringe-wigs.html">Fringe Wig</a></li>
+                        <li><a class="dropdown-item" href="short-cut-wigs.html">Short Cut Wig</a></li>
+                        <li><a class="dropdown-item" href="headband-wigs.html">Headband Wig</a></li>
+                        <li><a class="dropdown-item" href="hair-bundles.html">Hair Bundles</a></li>
+                        <li><a class="dropdown-item" href="wig-combo.html">Wig Combo</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">ABOUT US</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="new-arrivals.html">NEW ARRIVALS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="hair-tools.html">HAIR TOOLS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HOW TO ORDER</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </nav>
+    <!-- end of navbar -->
+
+    <section class="privacy-section py-5">
+        <br> <br>
+        <div class="container">
+            <br><br><br><br>
+            <!-- Title -->
+            <!-- <div class="text-center mb-5">
+        </div> -->
+
+            <div class="privacy-content">
+                <h2 class="fw-bold text-center mb-5 pink">Privacy Policy</h2>
+                <p>
+                    Naijabeautyhair is committed to respecting the privacy rights of website visitors.
+                    The following policies describe how we collect, protect, and use information we receive.
+                </p>
+
+                <hr>
+
+                <!-- Information Collection -->
+                <h4>What Information Do We Collect?</h4>
+                <ul>
+                    <li>Information when you register, place orders, respond to surveys, or communicate with us</li>
+                    <li>Details such as name, email, address, phone number, and payment information</li>
+                    <li>Cookies to enhance user experience and track website activity</li>
+                    <li>Click-stream data and browsing behavior to improve website performance</li>
+                </ul>
+
+                <hr>
+
+                <!-- Usage -->
+                <h4>How Do We Use Your Information?</h4>
+                <ul>
+                    <li>To improve customer service and respond to your requests</li>
+                    <li>To process transactions quickly and efficiently</li>
+                    <li>To manage promotions, surveys, or website features</li>
+                </ul>
+
+                <hr>
+
+                <!-- Security -->
+                <h4>How Do We Protect Your Information?</h4>
+                <p>
+                    We implement a variety of security measures to maintain the safety of your personal data.
+                    Your information is stored on secure networks and accessible only by authorized personnel.
+                </p>
+                <p>
+                    Sensitive data is transmitted via <b>SSL (Secure Socket Layer)</b> technology and encrypted
+                    in our database for protection.
+                </p>
+
+                <hr>
+
+                <!-- Disclosure -->
+                <h4>Do We Disclose Information to Outside Parties?</h4>
+                <p>
+                    We do not sell or trade your personal information. However, trusted partners may assist
+                    us in operating our website and serving you, under strict confidentiality agreements.
+                </p>
+                <p>
+                    We may release information when required to comply with legal obligations or protect
+                    rights, safety, and property.
+                </p>
+
+                <hr>
+
+                <!-- Questions -->
+                <h4>Questions & Feedback</h4>
+                <p>
+                    We welcome your questions and feedback regarding privacy. Please contact us anytime.
+                </p>
+
+                <hr>
+
+                <!-- Online Policy -->
+                <h4>Online Policy Only</h4>
+                <p>
+                    This policy applies only to information collected through our website and not offline.
+                </p>
+
+                <hr>
+
+                <!-- Consent -->
+                <h4>Your Consent</h4>
+                <p>
+                    By using our website, you consent to our privacy policy.
+                </p>
+
+                <hr>
+
+                <!-- Opt Out -->
+                <h4>Opt Out / Corrections</h4>
+                <p>
+                    You may request to update your personal information, stop receiving emails, or disable your account.
+                </p>
+                <p>
+                    Contact us via email:
+                    <a href="mailto:naijabeautyhair@gmail.com">naijabeautyhair@gmail.com</a>
+                </p>
+
+                <p class="warning">
+                    ⚠️ Please do not send credit card details or sensitive information via email.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer section -->
+
+    <!-- footer section -->
+
+    <footer class="main-footer">
+
+        <div class="container">
+
+            <!-- 🔥 TOP SECTION (Brand + Writeup) -->
+            <div class="text-center footer-top">
+
+                <!-- Brand space -->
+                <!-- <h2 class="footer-brand">KINGS HAIR</h2> -->
+                <a class="navbar-brand d-flex align-items-center justify-content-center gap-2 m-0" href="index.html">
+                    <img src="img/Kings Hair salon logo design.png" alt="Logo" class="logo-img">
+                    <!-- <span>KINGS HAIR</span> -->
+                </a>
+
+                <!-- Writeup -->
+                <p class="footer-text">
+                    Premium luxury human hair wigs for all occasions
+                </p>
+
+            </div>
+
+            <!-- 🔥 SPACE -->
+            <div class="my-5"></div>
+
+            <!-- 🔥 BOTTOM SECTION -->
+            <div class="row">
+
+                <!-- LEFT COL -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in">
+                    <h5 class="footer-heading">STORE</h5>
+                    <p>NO.4 oko street</p>
+                    <p>MON - SAT : 9 am - 6 pm</p>
+                    <p>SUN : 12 pm - 6 pm</p>
+                    <p>Contact Us By</p>
+                    <p>-Call: 08109529656</p>
+                    <p>-WA : 07010400454</p>
+                </div>
+
+                <!-- CENTER COL 1 -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in">
+                    <h5 class="footer-heading">MORE INFO</h5>
+                    <ul class="footer-links">
+                        <li><a href="about-us.html">About us</a></li>
+                        <li><a href="contact-me.html">Contact us</a></li>
+                        <li><a href="#">Order Tutorial</a></li>
+                        <li><a href="hair-tools.html">Hair Tools</a></li>
+                    </ul>
+                </div>
+
+                <!-- CENTER COL 2 -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in">
+                    <h5 class="footer-heading">SERVICE POLICY</h5>
+                    <ul class="footer-links">
+                        <li><a href="return-policy.html">Return Policy</a></li>
+                        <li><a href="shipment-policy.html">Shipment Policy</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT COL (SOCIALS) -->
+                <div class="col-lg-3 col-md-6 mb-4 d-flex flex-column justify-content-end" data-aos="zoom-in">
+
+                    <div class="footer-socials mt-auto">
+                        <h5 class="footer-heading">Follow Us</h5>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://x.com/FamzyKings"><i class="bi bi-twitter"></i></a>
+                    </div>
+                    <br>
+                    <div>
+                        &copy; 2026, <a href="index.html"><i class="kill">KINGS HAIR</i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1500,
+            // once: true,
+            easing: 'ease-in-out'
+        });
+    </script>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

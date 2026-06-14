@@ -1,0 +1,475 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    /* background: linear-gradient(135deg, rgba(252,70,107,1), rgba(63,94,251,1)); */
+    background: linear-gradient(to right, rgb(202, 13, 13), rgb(126, 7, 7), rgb(223, 23, 23), rgb(126, 7, 7),rgb(126, 7, 7));
+    height: 56px;
+}
+
+/* Layout */
+.main-wrapper {
+    display: flex;
+    flex: 1;
+    margin-top: 56px;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 220px;
+    /* background: linear-gradient(135deg, rgba(252,70,107,1), rgba(63,94,251,1)); */
+    background: linear-gradient(to right, rgb(126, 7, 7), rgb(126, 7, 7), rgb(223, 23, 23), rgb(126, 7, 7),rgb(126, 7, 7));
+    color: white;
+    height: calc(100vh - 56px);
+    padding-top: 10px;
+}
+
+#sidebar a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#sidebar a:hover,
+#sidebar a.active {
+    /* background-color: #5a379c; */
+    color: black;
+}
+
+/* Main content */
+#main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    padding: 10px;
+    /* background: linear-gradient(135deg, rgba(63,94,251,1), rgba(252,70,107,1)); */
+    background: linear-gradient(to right, rgb(126, 7, 7), rgb(126, 7, 7), rgb(223, 23, 23), rgb(126, 7, 7),rgb(126, 7, 7));
+    color: white;
+}
+
+
+/* product image */
+.product-img {
+    height: 50px;
+    width: 40%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.product-img:hover {
+    transform: scale(1.05);
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode #sidebar {
+    background: #1e1e1e;
+}
+
+.dark-mode #footer {
+    background: #1e1e1e;
+}
+
+.dark-mode #sidebar a {
+    color: #bbb;
+}
+
+/* Toggle Switch */
+/* DARK MODE */
+
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .navbar {
+    background-color: #1e1e1e !important;
+}
+
+.dark-mode .navbar a,
+.dark-mode .navbar .bi {
+    color: #ddd !important;
+}
+
+.dark-mode .navbar-nav .nav-link {
+    color: #ddd !important;
+}
+
+.dark-mode .navbar-nav .nav-link:hover {
+    color: #ff6600 !important;
+}
+
+.dark-mode .top-sellers,
+.dark-mode .wig-showcase {
+    background-color: #121212;
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.dark-mode .leader,
+.dark-mode .love {
+    background: #1e1e1e !important;
+}
+
+.dark-mode .main-footer {
+    background: #000 !important;
+}
+
+.dark-mode .dropdown-menu {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .dropdown-item {
+    color: #ddd;
+}
+
+.dark-mode #footer{
+    background-color: black;
+}
+
+
+/* Toggle Switch */
+.theme-toggle {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+}
+
+#darkModeToggle {
+    display: none;
+}
+
+.toggle-label {
+
+    width: 60px;
+    height: 30px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle-label .ball {
+    width: 22px;
+    height: 22px;
+    background: white;
+    position: absolute;
+    left: 4px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+#darkModeToggle:checked + .toggle-label .ball {
+    transform: translateX(30px);
+}
+
+.toggle-label .sun {
+    color: orange;
+}
+
+.toggle-label .moon {
+    color: gold;
+}
+
+/* Dark mode navbar */
+.dark-mode .navbar {
+    background: #1e1e1e !important;
+}
+
+/* Optional: make text softer in dark mode */
+.dark-mode .navbar .navbar-brand,
+.dark-mode .navbar .navbar-text {
+    color: #ffffff !important;
+}
+
+/* Optional: logout button */
+.dark-mode .navbar .btn {
+    border-color: #ccc;
+    color: #ccc;
+}
+
+
+/* ORDERS PAGE WRAPPER */
+.orders-wrapper {
+    padding: 20px;
+}
+
+/* ORDER CARD */
+.order-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-left: 5px solid rgb(126, 7, 7);
+    transition: 0.3s;
+}
+
+.order-card:hover {
+    transform: translateY(-3px);
+}
+
+/* HEADER */
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* STATUS BADGE */
+.status {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.status.pending {
+    background: orange;
+    color: white;
+}
+
+.status.approved {
+    background: green;
+    color: white;
+}
+
+/* IMAGE */
+.payment-proof img {
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 2px solid #ddd;
+}
+
+/* BUTTON */
+.order-actions {
+    margin-top: 15px;
+}
+
+/* DARK MODE SUPPORT */
+.dark-mode .order-card {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .status.pending {
+    background: #ff9800;
+}
+
+.dark-mode .status.approved {
+    background: #2ecc71;
+}
+
+/* Add inside your CSS */
+
+.small-card{
+    width: 140px;
+    font-size: 12px;
+}
+
+
+/* ===================================== */
+/* 📱 EXTRA SMALL MOBILE FIX */
+/* ===================================== */
+@media (max-width: 768px) {
+
+    /* BODY */
+    body{
+        overflow-x: hidden;
+    }
+
+    /* ===================================== */
+    /* NAVBAR MOBILE FIX */
+    /* ===================================== */
+    .navbar{
+        height: auto !important;
+        padding: 10px !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+    }
+
+    /* Logo */
+    .navbar-brand{
+        font-size: 14px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .navbar-brand img{
+        height: 35px !important;
+        width: auto !important;
+    }
+
+    /* Right side */
+    .navbar .d-flex,
+    .navbar .ms-auto{
+        display: flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        flex-wrap: nowrap !important;
+    }
+
+    /* Name text */
+    .navbar span,
+    .navbar .navbar-text{
+        font-size: 10px !important;
+        max-width: 65px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Login button */
+    .navbar .btn{
+        width: auto !important;
+        font-size: 10px !important;
+        padding: 5px 7px !important;
+        margin: 0 !important;
+    }
+
+    /* TOGGLE */
+    .theme-toggle{
+        position: static !important;
+        transform: scale(0.65);
+        margin: 0 !important;
+    }
+
+    .toggle-label{
+        width: 45px !important;
+        height: 22px !important;
+    }
+
+    .toggle-label .ball{
+        width: 16px !important;
+        height: 16px !important;
+        left: 3px !important;
+    }
+
+    #darkModeToggle:checked + .toggle-label .ball{
+        transform: translateX(22px);
+    }
+
+    /* ===================================== */
+    /* SIDEBAR */
+    /* ===================================== */
+    #sidebar a{
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    /* MAIN CONTENT */
+    #main-content{
+        padding: 8px;
+    }
+
+    /* HEADINGS */
+    h1,h2,h3,h4,h5{
+        font-size: 18px !important;
+        margin-bottom: 10px;
+    }
+
+    /* FORM INPUTS */
+    input,
+    select,
+    textarea,
+    .form-control{
+        font-size: 12px !important;
+        padding: 7px !important;
+    }
+
+    /* BUTTONS */
+    .btn,
+    button{
+        font-size: 12px !important;
+        padding: 7px !important;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    /* PRODUCT CARDS */
+    .small-card{
+        width: 100% !important;
+        padding: 8px !important;
+        font-size: 11px !important;
+    }
+
+    .small-card h6{
+        font-size: 12px !important;
+    }
+
+    .small-card p{
+        font-size: 11px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .small-card img,
+    .product-img{
+        width: 100% !important;
+        height: 120px !important;
+        object-fit: cover;
+    }
+
+    /* ORDERS */
+    .order-card{
+        padding: 10px !important;
+    }
+
+    .order-card p,
+    .order-card h5{
+        font-size: 12px !important;
+    }
+
+    .payment-proof img{
+        width: 100% !important;
+        max-width: 150px !important;
+        height: auto;
+    }
+
+    .border.rounded.p-3 img{
+        width: 100% !important;
+        max-width: 130px !important;
+        height: auto;
+    }
+
+    /* TABLE */
+    .table{
+        font-size: 11px !important;
+    }
+
+    .table th,
+    .table td{
+        padding: 5px !important;
+    }
+
+}
