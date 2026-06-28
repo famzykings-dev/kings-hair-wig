@@ -3,7 +3,7 @@
 
     @section('content')
 
-<!-- 🔥 CONTACT SECTION -->
+<!--  CONTACT SECTION -->
 <section class="contact-section py-5">
     <div class="container">
 
@@ -15,7 +15,7 @@
 
         <div class="row">
 
-            <!-- 🔥 LEFT SIDE (CONTACT INFO) -->
+            <!--  LEFT SIDE (CONTACT INFO) -->
              
             <div class="col-lg-6 mb-4">
                   <br><br><br>
@@ -43,7 +43,7 @@
 
             </div>
 
-            <!-- 🔥 RIGHT SIDE (FORM) -->
+            <!--  RIGHT SIDE (FORM) -->
             <div class="col-lg-6">
                  <br><br><br>
                 <div class="contact-box p-4">
