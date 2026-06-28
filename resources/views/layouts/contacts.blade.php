@@ -21,7 +21,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light  shadow-sm flex-column">
 
-        <!-- 🔥 TOP ROW -->
+        <!--  TOP ROW -->
         <div class="container d-flex align-items-center justify-content-between py-3">
 
             <!-- Empty div (left space for perfect centering) -->
@@ -88,12 +88,12 @@
         <!-- Divider -->
         <!-- <hr class="w-100 m-0"> -->
 
-        <!-- 🔥 TOGGLER -->
+        <!--  TOGGLER -->
         <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- 🔥 MENU -->
+        <!--  MENU -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
 
@@ -150,7 +150,7 @@
 
     <div class="container" data-aos="zoom-in">
 
-        <!-- 🔥 TOP SECTION (Brand + Writeup) -->
+        <!--  TOP SECTION (Brand + Writeup) -->
         <div class="text-center footer-top">
 
             <!-- Brand space -->
@@ -166,10 +166,10 @@
 
         </div>
 
-        <!-- 🔥 SPACE -->
+        <!--  SPACE -->
         <div class="my-5"></div>
 
-        <!-- 🔥 BOTTOM SECTION -->
+        <!--  BOTTOM SECTION -->
         <div class="row">
 
             <!-- LEFT COL -->
